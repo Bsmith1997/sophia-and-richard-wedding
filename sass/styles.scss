@@ -807,39 +807,10 @@ RSVP form
       text-align: left;
       position: relative;
 
-      .input-field, .dropdown {
-        width: calc(50% - 10px); /* Adjust to fit two items per row */
-        box-sizing: border-box; /* Include padding in width */
-        padding: 10px; /* Ensure padding is uniform */
-      }
-
       i {
         color: $accent-color;
         font-size: 14px;
       }
-      .form-dropdown {
-        border: none;
-        outline: none;
-        width: 100%;
-        font-size: 16px;
-        padding: 4px;
-        background-color: transparent;
-        -webkit-appearance: none; /* Remove default dropdown arrow for WebKit browsers */
-        -moz-appearance: none;    /* Remove default dropdown arrow for Mozilla browsers */
-        appearance: none;         /* Remove default dropdown arrow for modern browsers */
-    }
-    .dropdown-container {
-      position: relative;
-      padding: 10px; /* Adjust as necessary */
-    }
-    
-    .dropdown-menu {
-      position: absolute; /* Align dropdown relative to its container */
-      left: 0;
-      top: 100%; /* Position below the container */
-      width: 100%; /* Make sure it spans the width */
-      box-sizing: border-box; /* Include padding in width */
-    }
       i:after {
         content: "";
         height: 30px;
@@ -849,6 +820,13 @@ RSVP form
         top: 50%;
         left: 30px;
         transform: translateY(-50%);
+      }
+      select {
+        flex: 1; /* Makes the select element take the remaining space */
+        height: 100%; /* Fills the height of the container */
+        border: none; /* Removes the default border */
+        outline: none; /* Removes the outline */
+        padding-left: 60px;
       }
       i.fa-user, i.fa-users, i.fa-envelope, .fa-key {
         font-size: 14px;
