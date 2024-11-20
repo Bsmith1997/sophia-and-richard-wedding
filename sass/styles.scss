@@ -12,6 +12,12 @@
 /* ==========================================================================
 Global Styles
 ========================================================================== */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 .group:after {
   content: "";
   display: table;
@@ -826,7 +832,7 @@ RSVP form
         height: 100%; /* Fills the height of the container */
         border: none; /* Removes the default border */
         outline: none; /* Removes the outline */
-        padding-left: 60px;
+        padding-left: 50px;
       }
       i.fa-user, i.fa-users, i.fa-envelope, .fa-key {
         font-size: 14px;
