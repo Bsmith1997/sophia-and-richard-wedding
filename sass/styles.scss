@@ -265,6 +265,13 @@ Hero
   background-size: cover;
   position: relative;
 
+  @media (max-width: 768px) {
+    .hero {
+      min-height: 400px; /* Adjust the height for smaller screens */
+      background-size: auto 100%; /* Scale the image to fit the screen */
+    }
+  }
+
   /*.rsvp-btn {
     position: absolute;
     bottom: 100px;
